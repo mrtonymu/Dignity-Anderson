@@ -77,8 +77,8 @@ export const content: Record<Lang, Dict> = {
       highlight: "可以很好玩",
       pillars: ["个人成长", "体验生活", "企业思维", "共创共赢"],
       subtitle:
-        "我们是最年轻、最好玩的房产企业家。在这里,你和一群正能量的伙伴一边玩、一边学习、一边成长、一边赚钱 —— 大家的目标只有一个:过上更有品质的生活。",
-      ctaPrimary: "立即加入我们",
+        "没经验、没人脉,也能入行。跟着已验证的系统从零开始,和一群正能量的伙伴一边玩、一边把房地产做成自己的事业 —— 过上更有品质的生活。",
+      ctaPrimary: "免费了解入行第一步",
       ctaSecondary: "认识 Anderson",
       trust: "已教过无数月入过万的房地产伙伴",
     },
@@ -86,7 +86,7 @@ export const content: Record<Lang, Dict> = {
       { value: "RM200K++", label: "2022 年个人佣金" },
       { value: "5 年+", label: "房地产实战经验" },
       { value: "3 年连冠", label: "公司冠军团队 🏆" },
-      { value: "100%", label: "验证过的小白开单系统" },
+      { value: "0→1", label: "新人开单系统" },
     ],
     about: {
       eyebrow: "关于我们",
@@ -132,12 +132,12 @@ export const content: Record<Lang, Dict> = {
     },
     system: {
       eyebrow: "我们如何栽培新加入的你",
-      title: "已验证 100% 成功的房产小白开单系统",
+      title: "从零带你开出第一单的实战系统",
       subtitle:
         "如果你肯拼搏、肯努力、肯学习,想要赚钱,却没人脉、没经验,害怕没人教、不会做、不敢尝试 —— 我们是贵精不贵多的团队,每一位进来的伙伴,我们必定用心栽培。只要你愿意跟着我们的脚步:其它人可以,你也一样可以。",
       steps: [
         { n: "01", title: "用心栽培", desc: "贵精不贵多。每一位进来的伙伴,我们都手把手用心带,不会让你一个人摸索。" },
-        { n: "02", title: "系统学习", desc: "已验证 100% 成功的房产小白开单系统,零经验、零人脉也能从头学起。" },
+        { n: "02", title: "系统学习", desc: "从零带你开出第一单的实战系统,零经验、零人脉也能从头学起。" },
         { n: "03", title: "一边玩一边赚", desc: "一边玩、一边学习、一边成长、一边赚钱,身边都是正能量的伙伴。" },
         { n: "04", title: "成就你的平台", desc: "这里绝对是一个能成就你的平台 —— 大家的目标只有一个:过有品质的生活。" },
       ],
@@ -199,8 +199,8 @@ export const content: Record<Lang, Dict> = {
       highlight: "can be fun",
       pillars: ["Personal Growth", "Real Experiences", "Founder Mindset", "Win Together"],
       subtitle:
-        "We're the youngest, most fun property entrepreneurs around. Here you play, learn, grow and earn alongside a team of positive people — all chasing one goal: a life of real quality.",
-      ctaPrimary: "Join Us",
+        "No experience, no network — you can still get in. Start from zero with a proven system and turn real estate into your own business, alongside a team of positive people — for a life of real quality.",
+      ctaPrimary: "Free intro — your first step",
       ctaSecondary: "Meet Anderson",
       trust: "We've mentored countless agents to 5-figure monthly income",
     },
@@ -208,7 +208,7 @@ export const content: Record<Lang, Dict> = {
       { value: "RM200K++", label: "Personal commission, 2022" },
       { value: "5+ yrs", label: "Real estate experience" },
       { value: "3-year champion", label: "Top Group of the Year 🏆" },
-      { value: "100%", label: "Proven beginner closing system" },
+      { value: "0→1", label: "Beginner closing system" },
     ],
     about: {
       eyebrow: "About Us",
@@ -254,12 +254,12 @@ export const content: Record<Lang, Dict> = {
     },
     system: {
       eyebrow: "How we nurture you",
-      title: "A 100%-proven beginner's deal-closing system",
+      title: "A system that takes you from zero to your first deal",
       subtitle:
         "If you're willing to hustle, work hard and learn — you want to earn but have no network, no experience, and you're afraid no one will teach you — we're a quality-over-quantity team. Every partner who joins, we nurture wholeheartedly. Follow our steps: if others can do it, so can you.",
       steps: [
         { n: "01", title: "Nurtured with care", desc: "Quality over quantity. Every partner gets hands-on guidance — you'll never have to figure it out alone." },
-        { n: "02", title: "Learn the system", desc: "A 100%-proven beginner closing system — start from zero, no experience or network required." },
+        { n: "02", title: "Learn the system", desc: "A system that takes you from zero to your first deal — no experience or network required." },
         { n: "03", title: "Play & earn", desc: "Play, learn, grow and earn — all at once, surrounded by positive, supportive partners." },
         { n: "04", title: "A platform that grows you", desc: "This is genuinely a platform that will grow you — one shared goal: living a quality life." },
       ],
