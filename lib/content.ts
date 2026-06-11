@@ -202,7 +202,7 @@ export const content: Record<Lang, Dict> = {
         "No experience, no network — you can still get in. Start from zero with a proven system and turn real estate into your own business, alongside a team of positive people — for a life of real quality.",
       ctaPrimary: "Free intro — your first step",
       ctaSecondary: "Meet Anderson",
-      trust: "We've mentored countless agents to 5-figure monthly income",
+      trust: "We've coached new agents all the way to five-figure months",
     },
     stats: [
       { value: "RM200K++", label: "Personal commission, 2022" },
@@ -214,13 +214,13 @@ export const content: Record<Lang, Dict> = {
       eyebrow: "About Us",
       title: "A property business that grows you",
       body: [
-        "Dignity is a team of young, energetic people — a real estate platform that prioritises personal growth, offers a win-win environment, and nurtures a spirit of selfless service.",
+        "Dignity is a young, high-energy team — a real estate platform built on personal growth, shared wins, and putting people first.",
       ],
       points: [
-        { icon: "growth", title: "Personal Growth", desc: "We invest in every partner's growth — structured nurturing, from beginner to closing deals on your own." },
-        { icon: "lifestyle", title: "Real Experiences", desc: "Trade your results for travel and experiences, and a freer, higher-quality life." },
-        { icon: "mindset", title: "Founder Mindset", desc: "Be one of the youngest, most fun property entrepreneurs — work with a business owner's mindset." },
-        { icon: "winwin", title: "Win Together", desc: "Quality over quantity. Selfless service, positive partners — hustle, grow and win together." },
+        { icon: "growth", title: "Personal Growth", desc: "We back every partner with hands-on coaching — from your first day to closing deals on your own." },
+        { icon: "lifestyle", title: "Real Experiences", desc: "Turn your results into travel, real experiences, and a freer, fuller life." },
+        { icon: "mindset", title: "Founder Mindset", desc: "Be one of the youngest, most fun property entrepreneurs around — and treat your work like your own business." },
+        { icon: "winwin", title: "Win Together", desc: "Quality over quantity. Good people who lift each other up — we hustle, grow and win together." },
       ],
     },
     founder: {
@@ -229,7 +229,7 @@ export const content: Record<Lang, Dict> = {
       role: "CEO & Founder · Dignity Group Realty",
       body: [
         "Founder of Dignity Group Realty. She built a team that turns real estate into something genuinely fun — where young people play, learn, grow and earn, all at once.",
-        "Her «Stories & Lessons» series distills years of sales and leadership wisdom into short, practical stories you can actually use.",
+        "Her 'Stories & Lessons' series distills years of sales and leadership wisdom into short, practical stories you can actually use.",
       ],
     },
     leader: {
@@ -237,10 +237,10 @@ export const content: Record<Lang, Dict> = {
       name: "Anderson Chen",
       role: "Team Leader",
       greeting: "Hi, I'm",
-      tagline: "5 years in real estate, countless 5-figure earners mentored — now it's your turn.",
+      tagline: "Five years in the field, plenty of partners coached to five-figure months — now it's your turn.",
       bio: [
-        "I'm the Team Leader of DIGNITY Group Realty, with 5 years in real estate, and I've mentored countless partners to 5-figure monthly incomes.",
-        "Here, I want to invite you to be a young dreamer with me — to live a life of real freedom, to hustle, grow and live a better life together, and to experience life together.",
+        "I'm the Team Leader at DIGNITY Group Realty — five years in real estate, and I've coached plenty of partners to five-figure months.",
+        "I want to invite you to dream big with me — to build a freer life on your own terms, and to hustle, grow and make the most of it, side by side.",
       ],
       achievementsTitle: "Track record",
       achievements: [
@@ -253,12 +253,12 @@ export const content: Record<Lang, Dict> = {
       ],
     },
     system: {
-      eyebrow: "How we nurture you",
+      eyebrow: "How we train you",
       title: "A system that takes you from zero to your first deal",
       subtitle:
-        "If you're willing to hustle, work hard and learn — you want to earn but have no network, no experience, and you're afraid no one will teach you — we're a quality-over-quantity team. Every partner who joins, we nurture wholeheartedly. Follow our steps: if others can do it, so can you.",
+        "Willing to hustle and learn, but worried you've got no network, no experience, and no one to show you the ropes? We keep the team small on purpose — so everyone who joins gets coached properly. Follow the steps: if others can do it, so can you.",
       steps: [
-        { n: "01", title: "Nurtured with care", desc: "Quality over quantity. Every partner gets hands-on guidance — you'll never have to figure it out alone." },
+        { n: "01", title: "Hands-on from day one", desc: "Quality over quantity. Every partner gets hands-on guidance — you'll never have to figure it out alone." },
         { n: "02", title: "Learn the system", desc: "A system that takes you from zero to your first deal — no experience or network required." },
         { n: "03", title: "Play & earn", desc: "Play, learn, grow and earn — all at once, surrounded by positive, supportive partners." },
         { n: "04", title: "A platform that grows you", desc: "This is genuinely a platform that will grow you — one shared goal: living a quality life." },
@@ -266,8 +266,8 @@ export const content: Record<Lang, Dict> = {
     },
     rewards: {
       eyebrow: "The payoff",
-      title: "Performance turns into rewards you can see",
-      subtitle: "Top performers redeem their results for luxury travel every year. These are real reward trips from Dignity.",
+      title: "Your results turn into rewards you can see",
+      subtitle: "Every year, top performers cash in their results for luxury travel. These are real Dignity reward trips.",
       items: [
         { youtubeId: "5ZmBDZdIWMg", title: "ITALY Incentive Trip 2022", tag: "DIGNITY GROUP REALTY · Italy" },
         { youtubeId: "84Z3rLdKKbQ", title: "Four Seasons Langkawi — only 2 in Malaysia", tag: "On Dignity 🏖️" },
@@ -284,15 +284,15 @@ export const content: Record<Lang, Dict> = {
       eyebrow: "Join Us",
       title: "Will you be one of them?",
       subtitle:
-        "This is genuinely a platform that will grow you. We're the youngest, most fun property entrepreneurs — play, learn, grow and earn, surrounded by positive partners.",
+        "This really is a place that will grow you. We're the youngest, most fun property entrepreneurs around — play, learn, grow and earn, surrounded by good people.",
       scarcity: "Only 5 training spots left this intake",
-      bullets: ["No network or experience needed", "Nurtured + system mentoring", "Flexible hours · high earning potential", "Luxury travel rewards"],
+      bullets: ["No network or experience needed", "Hands-on mentoring + a proven system", "Flexible hours · high earning potential", "Luxury travel rewards"],
       cta: "Apply to join now",
     },
     contact: {
       eyebrow: "Contact",
       title: "Leave your details — we'll reach out",
-      subtitle: "Fill in the form and Anderson will personally contact you to talk about your next step.",
+      subtitle: "Fill in the form and Anderson will personally reach out to talk through your next step.",
       address: "N-13-2, Jalan Jalil Utama 2, Bukit Jalil, 57000 Kuala Lumpur, Federal Territory of Kuala Lumpur",
       hotlineLabel: "Career Hotline",
       hotline: "+6016-917 7882",
@@ -306,7 +306,7 @@ export const content: Record<Lang, Dict> = {
     },
     footer: {
       tagline: "Real estate can be fun.",
-      quote: "Live a life of real freedom — hustle, grow, live better and experience life, together.",
+      quote: "Live life on your own terms — hustle, grow, and make the most of it, together.",
       company: "DIGNITY GROUP REALTY SDN BHD",
       copyright: "Group Director Anderson Chen · +6016-917 7882 · Dignity Group Realty · Affluence Group · Team Leader",
       nav: "Navigate", follow: "Follow us",
