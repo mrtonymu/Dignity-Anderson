@@ -508,16 +508,29 @@ function Crew({ t, c, lang }: { t: T; c: C; lang: Lang }) {
 
         <div className="grid gap-6 lg:grid-cols-2">
           <CrewCard photo={assets.kelly} name={t.founder.name} role={t.founder.role} tag="CAPTAIN" body={t.founder.body} href="#log" hrefLabel={t.nav.lessons} />
-          <CrewCard photo={assets.anderson} name={t.leader.name} role={t.leader.role} tag="FIRST OFFICER" body={t.leader.bio} href="#checkin" hrefLabel={t.nav.contact} fullBody />
+          <CrewCard photo={assets.anderson} name={t.leader.name} role={t.leader.role} tag="FIRST OFFICER" body={t.leader.bio} href="#checkin" hrefLabel={t.nav.contact} fullBody teaser={t.leader.tagline} />
         </div>
 
         {/* Anderson's logbook — achievements as visa stamps */}
         <div className="reveal mt-6 rounded-tk border border-line bg-card p-6 sm:p-9">
           <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-dashed border-line pb-4">
             <p className="display text-2xl">{t.leader.greeting} {t.leader.name}</p>
-            <span className="ticket text-stamp">{t.leader.achievementsTitle} · VISA STAMPS</span>
+            <span className="ticket text-ink-soft">{t.leader.role}</span>
           </div>
-          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+
+          {/* Anderson's full self-introduction */}
+          <div className="mt-5 space-y-3 text-sm leading-relaxed text-ink-soft sm:text-base">
+            {t.leader.bio.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+
+          {/* track record */}
+          <div className="mt-7 flex items-center gap-3">
+            <span className="ticket text-stamp">{t.leader.achievementsTitle} · VISA STAMPS</span>
+            <span className="h-px flex-1 bg-line" />
+          </div>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {t.leader.achievements.map((a) => (
               <li key={a} className="flex items-start gap-3">
                 <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 border-stamp text-stamp">
@@ -548,8 +561,8 @@ function Crew({ t, c, lang }: { t: T; c: C; lang: Lang }) {
 }
 
 function CrewCard({
-  photo, name, role, tag, body, href, hrefLabel, fullBody,
-}: { photo: string; name: string; role: string; tag: string; body: string[]; href: string; hrefLabel: string; fullBody?: boolean }) {
+  photo, name, role, tag, body, href, hrefLabel, fullBody, teaser,
+}: { photo: string; name: string; role: string; tag: string; body: string[]; href: string; hrefLabel: string; fullBody?: boolean; teaser?: string }) {
   return (
     <div className="reveal flex gap-5 rounded-tk border border-line bg-card p-5 sm:p-6">
       <div className="relative h-44 w-32 shrink-0 overflow-hidden rounded-lg border border-line bg-navy sm:h-52 sm:w-40">
@@ -562,7 +575,7 @@ function CrewCard({
         <span className="ticket text-ink-soft">PASSENGER</span>
         <p className="display mt-1 text-2xl leading-tight">{name}</p>
         <p className="mt-1 text-xs font-semibold text-stamp">{role}</p>
-        <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-ink-soft">{body[0]}</p>
+        <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-ink-soft">{teaser || body[0]}</p>
         <a href={href} className="ticket mt-auto inline-flex items-center gap-1.5 pt-3 text-ink transition-colors hover:text-stamp">
           {hrefLabel}
           <ArrowRightIcon className="h-3.5 w-3.5" />

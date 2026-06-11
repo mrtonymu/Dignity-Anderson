@@ -56,7 +56,7 @@ export interface Dict {
   stats: Achievement[];
   about: { eyebrow: string; title: string; body: string[]; points: ValueProp[] };
   founder: { eyebrow: string; name: string; role: string; body: string[] };
-  leader: { eyebrow: string; name: string; role: string; greeting: string; bio: string[]; achievementsTitle: string; achievements: string[] };
+  leader: { eyebrow: string; name: string; role: string; greeting: string; tagline: string; bio: string[]; achievementsTitle: string; achievements: string[] };
   system: { eyebrow: string; title: string; subtitle: string; steps: Step[] };
   rewards: { eyebrow: string; title: string; subtitle: string; items: Reward[] };
   lessons: { eyebrow: string; title: string; subtitle: string; cta: string };
@@ -114,7 +114,8 @@ export const content: Record<Lang, Dict> = {
       eyebrow: "团队核心领导",
       name: "Anderson Chen",
       role: "Team Leader · 团队核心领导",
-      greeting: "你好~",
+      greeting: "你好,我是",
+      tagline: "5 年房地产实战,带出无数月入过万的伙伴 —— 现在,我想带上你。",
       bio: [
         "我是 DIGNITY Group Realty 的 Team Leader(团队核心领导),在房地产行业已经有 5 年的经验,也教过无数月入过万的房地产伙伴。",
         "在这里,我想邀请你和我一起做个有梦的年轻人 —— 可以实践自由的人生,一起打拼、一起成长、一起过上更有品质的生活,一起体验人生。",
@@ -235,7 +236,8 @@ export const content: Record<Lang, Dict> = {
       eyebrow: "Team Leader",
       name: "Anderson Chen",
       role: "Team Leader",
-      greeting: "Hi~",
+      greeting: "Hi, I'm",
+      tagline: "5 years in real estate, countless 5-figure earners mentored — now it's your turn.",
       bio: [
         "I'm the Team Leader of DIGNITY Group Realty, with 5 years in real estate, and I've mentored countless partners to 5-figure monthly incomes.",
         "Here, I want to invite you to be a young dreamer with me — to live a life of real freedom, to hustle, grow and live a better life together, and to experience life together.",
