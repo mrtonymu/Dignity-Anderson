@@ -29,11 +29,15 @@ import {
   StarIcon,
   WhatsappIcon,
 } from "./icons";
+import { track } from "@vercel/analytics";
 
 const FB_PAGE = "https://www.facebook.com/kellyhowtv";
 const fbVideoUrl = (id: string) => `${FB_PAGE}/videos/${id}`;
 const fbEmbed = (id: string) =>
   `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fbVideoUrl(id) + "/")}&show_text=false&width=560&t=0`;
+
+/* Conversion events — Vercel Analytics (object_action naming) */
+const trackWa = (location: string) => track("whatsapp_clicked", { location });
 
 /* ---------- scroll hooks ---------- */
 
@@ -146,7 +150,7 @@ export default function Landing() {
 
           <div className="flex items-center gap-2">
             <LangToggle lang={lang} setLang={setLang} />
-            <a href={wa} target="_blank" rel="noopener noreferrer" className="hidden items-center gap-1.5 rounded-md bg-stamp px-4 py-2.5 text-sm font-bold text-paper shadow-sm transition-transform duration-200 hover:-translate-y-0.5 sm:inline-flex">
+            <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => trackWa("nav")} className="hidden items-center gap-1.5 rounded-md bg-stamp px-4 py-2.5 text-sm font-bold text-paper shadow-sm transition-transform duration-200 hover:-translate-y-0.5 sm:inline-flex">
               <WhatsappIcon className="h-4 w-4" />
               {t.nav.cta}
             </a>
@@ -168,7 +172,7 @@ export default function Landing() {
                 {l.label}
               </a>
             ))}
-            <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="ticket mt-1 flex items-center justify-center gap-1.5 rounded-md bg-stamp px-4 py-3 text-center font-bold text-paper">
+            <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => { setMenuOpen(false); trackWa("nav_mobile"); }} className="ticket mt-1 flex items-center justify-center gap-1.5 rounded-md bg-stamp px-4 py-3 text-center font-bold text-paper">
               <WhatsappIcon className="h-4 w-4" />
               {t.nav.cta}
             </a>
@@ -317,7 +321,7 @@ function Hero({ t, c, wa }: { t: T; c: C; wa: string }) {
             </dl>
 
             <div className="mt-7 flex flex-wrap items-center gap-3">
-              <a href={wa} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 rounded-md bg-stamp px-6 py-3.5 text-base font-bold text-paper shadow-md transition-transform duration-200 hover:-translate-y-0.5">
+              <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => trackWa("hero")} className="group inline-flex items-center gap-2 rounded-md bg-stamp px-6 py-3.5 text-base font-bold text-paper shadow-md transition-transform duration-200 hover:-translate-y-0.5">
                 <WhatsappIcon className="h-5 w-5" />
                 {t.hero.ctaPrimary}
               </a>
@@ -826,7 +830,7 @@ function FinalCall({ t, c, wa }: { t: T; c: C; wa: string }) {
               </li>
             ))}
           </ul>
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex items-center gap-2 rounded-md bg-paper px-7 py-4 text-base font-bold text-stamp shadow-xl transition-transform duration-200 hover:-translate-y-0.5">
+          <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => trackWa("final_call")} className="group mt-8 inline-flex items-center gap-2 rounded-md bg-paper px-7 py-4 text-base font-bold text-stamp shadow-xl transition-transform duration-200 hover:-translate-y-0.5">
             <WhatsappIcon className="h-5 w-5" />
             {t.recruit.cta}
           </a>
@@ -857,6 +861,7 @@ function CheckIn({ t, c, wa }: { t: T; c: C; wa: string }) {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    track("lead_submitted", { location: "checkin_form" });
     setSubmitted(true);
   };
 
@@ -869,7 +874,7 @@ function CheckIn({ t, c, wa }: { t: T; c: C; wa: string }) {
             <h2 className="display text-4xl leading-tight sm:text-5xl">{t.contact.title}</h2>
             <p className="mt-4 text-base leading-relaxed text-ink-soft sm:text-lg">{t.contact.subtitle}</p>
             <div className="mt-8 space-y-4">
-              <a href={wa} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 rounded-tk border border-[#25D366]/40 bg-[#25D366]/10 p-5 transition-colors duration-200 hover:bg-[#25D366]/15">
+              <a href={wa} target="_blank" rel="noopener noreferrer" onClick={() => trackWa("contact")} className="group flex items-center gap-4 rounded-tk border border-[#25D366]/40 bg-[#25D366]/10 p-5 transition-colors duration-200 hover:bg-[#25D366]/15">
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md bg-[#25D366] text-white">
                   <WhatsappIcon className="h-6 w-6" />
                 </span>

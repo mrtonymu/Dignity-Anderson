@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Manrope, Space_Mono, Noto_Sans_SC } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -67,6 +69,8 @@ export default function RootLayout({
     <html lang="zh">
       <body className={`grain ${bricolage.variable} ${manrope.variable} ${spaceMono.variable} ${notoSC.variable}`}>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
